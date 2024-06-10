@@ -1,0 +1,189 @@
+.dropdown-toggle::after {
+    display: none;
+}
+.hover :hover { 
+  background-color: rgba(255, 255, 255, 0.596);  /* rgba(0, 0, 255, 0.212); */
+}
+.gradient-blue {
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 4%, rgba(9,9,121,1) 47%, rgba(7,61,159,1) 100%); 
+}
+.gradient-red{
+  background: rgb(36,4,0);
+  background: radial-gradient(circle, rgba(36,4,0,1) 4%, rgba(121,9,9,1) 47%, rgba(159,7,7,1) 100%); 
+}
+.gradient-green{
+  background: rgb(2,36,0);
+  background: radial-gradient(circle, rgba(2,36,0,1) 4%, rgba(11,121,9,1) 47%, rgba(20,159,7,1) 100%); 
+}
+.lista {
+  list-style-type: none;
+}
+.p-tb{
+  padding-top: 1rem; 
+  padding-bottom: 1rem;
+  color: red;
+}
+.bg-invisible {
+  background-color: #00000000;
+}
+/* mis colores */
+.bg-desplegable{
+background-color: #699190;
+}
+.color-desplegable{
+  color: #699190;
+}
+.bg-header{
+  background-color: #0D5452;
+}
+.color-header{
+  color: #0D5452;
+}
+.bg-navbar{
+  background-color: #0c4745;
+}
+.color-navbar{
+  color: #0c4745;
+}
+.bg-fondo{
+  background-color: #0f0f1b;
+}
+.color-fondo{
+  color: #0f0f1b;
+}
+.bg-negro {
+  background-color: #000000;
+}
+.color-negro{
+  color: #000000;
+}
+.bg-transparente {
+  background-color: rgba(0, 0, 0, 0.178);
+}
+/* icono customizado */
+.custom-toggler-icon {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+/* Fonts */
+.kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.kanit-thin-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.kanit-extralight {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kanit-extralight-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-medium-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-semibold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-bold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-extrabold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kanit-black-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+ /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 800 */
+
+.changa-font {
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}

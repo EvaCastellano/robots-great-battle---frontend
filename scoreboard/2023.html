@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGB · Scoreboard 2023</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- mi css -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="../bootstrap-5.3.3-dist/fontawesome-free-6.5.2-web/css/all.css">
+</head>
+
+<body class="bg-fondo">
+  <!-- HEADER -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-header">
+    <div class="container-fluid">
+      <a class="navbar-brand p-0 m-0" href="../index.html">
+        <h1 style="font-family: teko; font-size: 5rem;">Robots Great Battle</h1>
+      </a>
+      <!-- boton hamburguesa -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- fin hamburguesa -->
+
+    </div>
+  </nav>
+  <!-- NAV -->
+  <div>
+    <ul class="list-group list-group-horizontal bg-navbar text-center fs-4 lista">
+      <li class="list-group-item-action">
+        <a class="text-decoration-none text-reset" data-bs-toggle="collapse" href="#Ediciones" role="button"
+          aria-expanded="false" aria-controls="Ediciones">
+          Ediciones</a>
+      </li>
+      <li class="list-group-item-action text-decoration-none"><a href="../halloffame/index.html" class="text-decoration-none text-reset">Hall of
+          Fame</a></li>
+      
+      <li class="list-group-item-action"><a href="../premios/index.html" class="text-decoration-none text-reset">Premios</a></li>
+      <li class="list-group-item-action"><a href="../normas/index.html" class="text-decoration-none text-reset">Normas</a></li>
+      <li class="list-group-item-action"><a href="../inscripcion/index.html" class="text-decoration-none text-reset">Inscripción</a></li>
+    </ul>
+  </div>
+  <!-- FIN NAV -->
+  <!-- FIN HEADER -->
+  <!-- collapse ediciones -->
+  <div style="width: 20%; position: absolute;" class="collapse bg-desplegable" id="Ediciones">
+    <div class="card card-body bg-desplegable p-0">
+      <ul class="list-group text-center fs-4 lista">
+
+        <!-- boton 2023 -->
+        <li class="btn-group dropend list-group-item-action">
+          <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown" aria-expanded="false"
+            data-bs-offset="-2,0">
+            2023
+          </button>
+          <ul class="dropdown-menu p-0">
+            <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="."
+                class="text-decoration-none text-reset">Scoreboard</a></li>
+            <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../jornadas/2023.html"
+                class="text-decoration-none text-reset">Jornadas</a></li>
+          </ul>
+        </li>
+        <!-- boton 2024 -->
+        <li class="btn-group dropend list-group-item-action">
+          <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown" aria-expanded="false">
+            2024
+          </button>
+          <ul class="dropdown-menu">
+            <li>Ageaegio</li>
+            <li>jvaokfnvao</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- fin collapse ediciones -->
+  <!-- breadcrumps -->
+  <div class="container-fluid bg-white" style="--bs-bg-opacity: 4%;">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Scoreboard</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- TITULO -->
+  <div class="container-fluid text-center m-3 kanit-light">
+    <h1>EDICIÓN 2023</h1>
+  </div>
+  <!-- FIN TITULO -->
+  <!-- SCOREBOARD -->
+  <div class="container">
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Posición</th>
+          <th style="width: 80%">Nombre Equipo</th>
+          <th>Puntos</th>
+        </tr>
+      </thead>
+      <tbody> <!--  class="table-group-divider" -->
+        <!-- primera row -->
+        <tr type="button" data-bs-toggle="modal" data-bs-target="#equipo1"> <!-- Button trigger modal -->
+          <th>1</th>
+          <td>
+              Equipo 1
+          </td>
+          <td>n</td>
+        </tr>
+        <!-- fin primera row -->
+        <tr>
+          <th>2</th>
+          <td>Equipo 2</td>
+          <td>n</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Equipo 3</td>
+          <td>n</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal E1-->
+  <!-- modal -->
+  <div class="modal fade bg-transparente" id="equipo1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content kanit-light gradient-blue">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Equipo 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body kanit-light">
+          <div class="row">
+            <div class="col">
+              <div class="row container">
+                <h1 class="text-center text-decoration-underline">MIEMBROS</h1>
+                <ul class="fs-4 text ms-2 lista">
+                  <li>Líder</li> <!-- TODO: resaltar de alguna manera al lider -->
+                  <li>Nombre</li>
+                  <li>Nombre</li>
+                </ul>
+              </div>
+              <div class="row text-center">
+                <img src="../img/bobsp.jpg" class="img-fluid border border-2 border-black p-0 ms-4 rounded-2" alt="imagen de grupo">
+                <!-- 360x188   bobsp:1280x720-->
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="text-center">
+                  <img src="../img/karen.jpg" alt="foto robot" class="img-fluid border border-2 border-black p-0 rounded-2">
+                </div>
+              </div>
+              <div class="row text-center">
+                <p>NOMBRE ROBOT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- FIN modal E1-->
+
+
+
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

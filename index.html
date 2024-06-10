@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--TODO dar formato al documento: Ctrl + Shift + I -->
+<!-- TODO: MUY IMPORTANTE PAL NAVBAR: https://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute -->
+
+<!-- TODO: hamburguesa pal navbar -->
+<!-- TODO: titulo responsive -->
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGB · Inicio</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- mi css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- iconos font awesome -->
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/fontawesome-free-6.5.2-web/css/all.css">
+</head>
+
+<body class="kanit-light bg-fondo">
+  <!-- HEADER -->
+  <!-- TITULO -->
+  <div class="navbar bg-header">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=".">
+        <h1 style="font-family: teko; font-size:5rem">Robots Great Battle</h1>
+      </a>
+    </div>
+  </div>
+  <!-- FIN TITULO -->
+  <!-- NAV -->
+  <nav class="bg-navbar">
+    <ul class="list-group list-group-horizontal bg-navbar text-center fs-4 lista">
+      <li class="list-group-item-action">
+        <a class="text-decoration-none text-reset" data-bs-toggle="collapse" href="#Ediciones" role="button"
+          aria-expanded="false" aria-controls="Ediciones">
+          Ediciones</a>
+      </li>
+      <li class="list-group-item-action text-decoration-none"><a href="./halloffame/index.html"
+          class="text-decoration-none text-reset"> Hall of
+          Fame </a></li>
+
+      <li class="list-group-item-action"><a href="" class="text-decoration-none text-reset">Premios</a></li>
+      <li class="list-group-item-action"><a href="normas/index.html" class="text-decoration-none text-reset">Normas</a>
+      </li>
+      <li class="list-group-item-action"><a href="inscripcion/index.html"
+          class="text-decoration-none text-reset">Inscripción</a></li>
+    </ul>
+  </nav>
+  <!-- FIN NAV -->
+  <!-- FIN HEADER -->
+  <!-- collapse años -->
+  <div style="width: 20%; position: absolute;" class="collapse bg-desplegable" id="Ediciones">
+    <div class="card card-body bg-desplegable p-0">
+      <ul class="list-group text-center fs-4 lista">
+
+        <!-- boton 2023 -->
+        <li class="btn-group dropend list-group-item-action">
+          <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown" aria-expanded="false"
+            data-bs-offset="-2,0">
+            2023
+          </button>
+          <ul class="dropdown-menu p-0">
+            <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="./scoreboard/2023.html"
+                class="text-decoration-none text-reset">Scoreboard</a></li>
+            <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="./jornadas/2023.html"
+                class="text-decoration-none text-reset">Jornadas</a></li>
+          </ul>
+        </li>
+        <!-- boton 2024 -->
+        <li class="btn-group dropend list-group-item-action">
+          <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown" aria-expanded="false">
+            2024
+          </button>
+          <ul class="dropdown-menu p-0">
+            <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="./scoreboard/2023.html"
+                class="text-decoration-none text-reset">Scoreboard</a></li>
+            <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="./jornadas/2023.html"
+                class="text-decoration-none text-reset">Jornadas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- fin collapse años -->
+  <!-- CONTENIDO -->
+  <div class="container">
+    <p class="mt-2 fs-5">Siguiendo el camino trazado por competiciones americanas como “BattleBots” o británicas como
+      “Robo Wars”, queremos introducir este deporte en nuestros centros pero adaptándolo a un ambiente menos televisivo
+      como puede ser la educación. Con ello queremos estimular la creatividad y el trabajo en equipo mediante una
+      competición estimulante y divertida como no lo puede ser ninguna otra más que una genuina batalla entre máquinas. <br>
+      Se trata de una competición para jóvenes, dónde estos deberán diseñar y construir su propio robot de batalla. La
+      categoría de peso a 500gr y el hecho de que hayan se ser construidos en plástico, permite que participantes con
+      pocos recursos puedan acceder a éste tipo de competiciones, normalmente muy prohibitivas en cuanto a costes.</p>
+      <p>Consulta las normas <a href="./normas/index.html">aquí</a>.</p>
+  </div>
+
+
+
+
+
+
+
+  <!-- PRUEBAS COLORES -->
+  <!-- <ul class="list-group list-group-horizontal text-center" style="position: absolute; bottom: 0;">
+    <li class="list-group-item flex-fill bg-myprimary">myprimary</li>
+    <li class="list-group-item flex-fill bg-desplegable">desplegable</li>
+    <li class="list-group-item flex-fill bg-mytertiary">mytertiary</li>
+    <li class="list-group-item flex-fill bg-myhola">myhola</li>
+    <li class="list-group-item flex-fill bg-header">myadios</li>
+    <li class="list-group-item flex-fill bg-navbar">navbar</li>
+    <li class="list-group-item flex-fill bg-mynsq">mynsq</li>
+    <li class="list-group-item flex-fill bg-myaaa">myaaa</li>
+
+  </ul> -->
+  <!-- FIN PRUEBAS COLORES -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
