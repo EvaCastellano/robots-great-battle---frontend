@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBAS 2</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- mi css -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <!-- iconos font awesome -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/fontawesome-free-6.5.2-web/css/all.css">
+
+    <style>
+        @media(max-width:576px) {
+            .sm-invisible {
+                display: none;
+            }
+
+            .sm-visible {
+                display: block;
+            }
+        }
+
+        @media(min-width:576px) {
+            .lg-invisible {
+                display: none;
+            }
+
+            .lg-visible {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body class="kanit-light bg-fondo">
+    <nav class="navbar-expand-sm bg-header">
+        <div class="container-fluid">
+            <div class="col">
+                <div class="row">
+                    <a class="navbar-brand fs-1 pt-2 pb-2" href=".." style="width: auto;">ROBOTS GREAT BATTLE</a>
+                    <!-- btn hamburguesa -->
+                    <button class="btn lg-invisible ms-auto" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" style="width: auto;"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <!-- / btn hamburguesa -->
+                </div>
+                <div class="row bg-navbar">
+                    <ul class="list-group list-group-horizontal bg-navbar text-center fs-4 lista sm-invisible p-0">
+                        <li class="list-group-item-action">
+                            <a class="text-decoration-none text-reset" role="button" data-bs-toggle="collapse" data-bs-target="#Ediciones"
+                                 aria-expanded="false" aria-controls="Ediciones">
+                                Ediciones</a>
+                        </li>
+                        <li class="list-group-item-action text-decoration-none"><a href="./halloffame/index.html"
+                                class="text-decoration-none text-reset"> Hall of
+                                Fame </a></li>
+
+                        <li class="list-group-item-action"><a href=""
+                                class="text-decoration-none text-reset">Premios</a></li>
+                        <li class="list-group-item-action"><a href="normas/index.html"
+                                class="text-decoration-none text-reset">Normas</a>
+                        </li>
+                        <li class="list-group-item-action"><a href="inscripcion/index.html"
+                                class="text-decoration-none text-reset">Inscripción</a></li>
+                    </ul>
+
+                </div>
+                <!-- collapse Ediciones -->
+                <div style="width: 20%; position: absolute; left: 0;" class="collapse bg-desplegable m-0"
+                    id="Ediciones">
+                    <div class="card card-body bg-desplegable p-0">
+                        <ul class="list-group text-center fs-4 lista">
+
+                            <!-- boton 2023 -->
+                            <li class="btn-group dropend list-group-item-action">
+                                <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-offset="-2,0">
+                                    2023
+                                </button>
+                                <ul class="dropdown-menu p-0">
+                                    <li class="list-group-item-action bg-desplegable fs-4 p-2"><a
+                                            href="./scoreboard/2023.html"
+                                            class="text-decoration-none text-reset">Scoreboard</a></li>
+                                    <li class="list-group-item-action bg-desplegable fs-4 p-2"><a
+                                            href="./jornadas/2023.html"
+                                            class="text-decoration-none text-reset">Jornadas</a></li>
+                                </ul>
+                            </li>
+                            <!-- boton 2024 -->
+                            <li class="btn-group dropend list-group-item-action">
+                                <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    2024
+                                </button>
+                                <ul class="dropdown-menu p-0">
+                                    <li class="list-group-item-action bg-desplegable fs-4 p-2"><a
+                                            href="./scoreboard/2023.html"
+                                            class="text-decoration-none text-reset">Scoreboard</a></li>
+                                    <li class="list-group-item-action bg-desplegable fs-4 p-2"><a
+                                            href="./jornadas/2023.html"
+                                            class="text-decoration-none text-reset">Jornadas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- fin collapse Ediciones -->
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">ROBOTS GREAT BATTLE</h5> <!-- titulo -->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <!-- boton x -->
+        </div>
+        <div class="offcanvas-body"> <!-- contenido -->
+            hoolaa
+        </div>
+    </div>
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('click', function (event) {
+              // Obtén el colapso y el botón de colapso
+              var collapseElement = document.getElementById('Ediciones');
+              var collapseButton = document.querySelector('[data-bs-toggle="collapse"]');
+        
+              // Comprueba si el clic fue fuera del colapso y del botón
+              if (!collapseElement.contains(event.target) && !collapseButton.contains(event.target)) {
+                // Si el colapso está desplegado, pliégalo
+                if (collapseElement.classList.contains('show')) {
+                  var collapse = new bootstrap.Collapse(collapseElement, {
+                    toggle: true
+                  });
+                  collapse.hide();
+                }
+              }
+            });
+          </script>
+</body>
+</html>

@@ -1,3 +1,26 @@
+@media(max-width:576px) {
+  .sm-invisible {
+      display: none;
+  }
+
+  .sm-visible {
+      display: block;
+  }
+}
+
+@media(min-width:576px) {
+  .lg-invisible {
+      display: none;
+  }
+
+  .lg-visible {
+      display: block;
+  }
+}
+
+.border-r-0 {
+  border-radius: 0%;
+}
 .dropdown-toggle::after {
     display: none;
 }
@@ -34,6 +57,12 @@ background-color: #699190;
 .color-desplegable{
   color: #699190;
 }
+.bg-desplegable2{
+  background-color: #527272;
+  }
+  .color-desplegable2{
+    color: #699190;
+  }
 .bg-header{
   background-color: #0D5452;
 }
