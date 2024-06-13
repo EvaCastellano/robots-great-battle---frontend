@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB - Scoreboard</title>
+    <title>RGB · Hall Of Fame</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,89 +14,158 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="../bootstrap-5.3.3-dist/fontawesome-free-6.5.2-web/css/all.css">
-    <style>
-        #cnv {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-        }
-    </style>
 </head>
 
-<body class="bg-fondo m-0">
-    <!-- HEADER -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-header">
-        <div class="container-fluid">
-            <a class="navbar-brand p-0 m-0" href="../index.html">
-                <h1 style="font-family: teko; font-size: 5rem;">Robots Great Battle</h1>
-            </a>
-            <!-- boton hamburguesa -->
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- fin hamburguesa -->
-        </div>
-    </nav>
-    <!-- NAV -->
-    <div class="bg-navbar">
-        <ul class="list-group list-group-horizontal bg-navbar text-center fs-4 lista">
-            <li class="list-group-item-action">
-                <a class="text-decoration-none text-reset" data-bs-toggle="collapse" href="#Ediciones" role="button"
-                    aria-expanded="false" aria-controls="Ediciones">Ediciones</a>
-            </li>
-            <li class="list-group-item-action text-decoration-none"><a href="../halloffame/index.html"
-                    class="text-decoration-none text-reset">Hall of Fame</a></li>
-           
-            <li class="list-group-item-action"><a href="../premios/index.html" class="text-decoration-none text-reset">Premios</a></li>
-            <li class="list-group-item-action"><a href="../normas/index.html" class="text-decoration-none text-reset">Normas</a></li>
-            <li class="list-group-item-action"><a href="../inscripcion/index.html" class="text-decoration-none text-reset">Inscripción</a></li>
-        </ul>
-    </div>
-    <!-- FIN NAV -->
-    <!-- FIN HEADER -->
-    <!-- collapse ediciones -->
-    <div style="width: 20%; position: absolute;" class="collapse bg-desplegable" id="Ediciones">
-        <div class="card card-body bg-desplegable p-0">
-            <ul class="list-group text-center fs-4 lista">
+<body class="kanit-light bg-fondo">
+    <nav class="navbar-expand-sm bg-header">
+      <div class="container-fluid">
+        <div class="col">
+          <div class="row">
+            <a class="navbar-brand pt-2 pb-2" href=".." style="width: auto; font-family: teko; font-size: 3rem;">ROBOTS GREAT BATTLE</a>
+            <!-- btn hamburguesa -->
+            <button class="btn lg-invisible ms-auto" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" style="width: auto;"><span
+                class="navbar-toggler-icon"></span></button>
+            <!-- / btn hamburguesa -->
+          </div>
+          <div class="row bg-navbar">
+            <ul class="list-group list-group-horizontal bg-navbar text-center fs-4 lista sm-invisible p-0">
+              <li class="list-group-item-action">
+                <a class="text-decoration-none text-reset" role="button" data-bs-toggle="collapse"
+                  data-bs-target="#Ediciones" aria-expanded="false" aria-controls="Ediciones">
+                  Ediciones</a>
+              </li>
+              <li class="list-group-item-action text-decoration-none"><a href="./halloffame/index.html"
+                  class="text-decoration-none text-reset"> Hall of
+                  Fame </a></li>
+  
+              <li class="list-group-item-action"><a href="../premios/index.html" class="text-decoration-none text-reset">Premios</a></li>
+              <li class="list-group-item-action"><a href="../normas/index.html"
+                  class="text-decoration-none text-reset">Normas</a>
+              </li>
+              <li class="list-group-item-action"><a href="../inscripcion/index.html"
+                  class="text-decoration-none text-reset">Inscripción</a></li>
+            </ul>
+  
+          </div>
+          <!-- collapse Ediciones -->
+          <div style="width: 20%; position: absolute; left: 0;" class="collapse bg-desplegable m-0" id="Ediciones">
+            <div class="card card-body bg-desplegable p-0">
+              <ul class="list-group text-center fs-4 lista">
+  
                 <!-- boton 2023 -->
                 <li class="btn-group dropend list-group-item-action">
-                    <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown"
-                        aria-expanded="false" data-bs-offset="-2,0">2023</button>
-                    <ul class="dropdown-menu p-0">
-                        <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../scoreboard/2023.html"
-                                class="text-decoration-none text-reset">Scoreboard</a></li>
-                        <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../jornadas/2023.html"
-                                class="text-decoration-none text-reset">Jornadas</a></li>
-                    </ul>
+                  <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown" aria-expanded="false"
+                    data-bs-offset="-2,0">
+                    2023
+                  </button>
+                  <ul class="dropdown-menu p-0">
+                    <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../scoreboard/2023.html"
+                        class="text-decoration-none text-reset">Scoreboard</a></li>
+                    <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../jornadas/2023.html"
+                        class="text-decoration-none text-reset">Jornadas</a></li>
+                  </ul>
                 </li>
                 <!-- boton 2024 -->
                 <li class="btn-group dropend list-group-item-action">
-                    <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown"
-                        aria-expanded="false">2024</button>
-                    <ul class="dropdown-menu">
-                        <li>Ageaegio</li>
-                        <li>jvaokfnvao</li>
-                    </ul>
+                  <button type="button" class="btn dropdown-toggle fs-4" data-bs-toggle="dropdown" aria-expanded="false">
+                    2024
+                  </button>
+                  <ul class="dropdown-menu p-0">
+                    <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../scoreboard/2023.html"
+                        class="text-decoration-none text-reset">Scoreboard</a></li>
+                    <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../jornadas/2023.html"
+                        class="text-decoration-none text-reset">Jornadas</a></li>
+                  </ul>
                 </li>
-            </ul>
+              </ul>
+            </div>
+          </div>
+          <!-- /collapse Ediciones -->
         </div>
+      </div>
+    </nav>
+    <!-- NAV SM -->
+    <div class="offcanvas offcanvas-top bg-navbar" style="height: fit-content;" tabindex="-1" id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <!-- titulo -->
+        <h1 class="offcanvas-title" id="offcanvasTopLabel" style="font-family: teko;">ROBOTS GREAT BATTLE</h1>
+        <!-- boton x -->
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <!-- contenido -->
+        <ul class="list-group w-100 d-flex flex-column text-center fs-4 border-r-0" >
+          <li class="list-group-item flex-fill ps-0 pe-0 bg-navbar border-negro">
+            <a class="text-decoration-none text-reset" role="button" data-bs-toggle="collapse"
+              data-bs-target="#EdicionesSM" aria-expanded="false" aria-controls="EdicionesSM">
+              Ediciones
+            </a>
+            <!-- años -->
+            <div class="collapse bg-desplegable" id="EdicionesSM">
+              <!-- 2023 -->
+              <button class="btn fs-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#2023"
+                aria-expanded="false" aria-controls="2023">
+                2023
+              </button>
+              <div class="collapse" id="2023">
+                <div>
+                  <ul class="list-group list-group-flush w-100 d-flex flex-column text-center fs-4">
+                    <li class="list-group-item flex-fill bg-desplegable2"><a href="../scoreboard/2023.html"
+                        class="text-decoration-none text-reset">Scoreboard</a></li>
+                    <li class="list-group-item flex-fill bg-desplegable2"><a href="../jornadas/2023.html"
+                        class="text-decoration-none text-reset">Jornadas</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /2023 -->
+              <!-- 2024 -->
+              <button class="btn fs-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#2024"
+                aria-expanded="false" aria-controls="2024">
+                2024
+              </button>
+              <div class="collapse" id="2024">
+                <div>
+                  <ul class="list-group list-group-flush w-100 d-flex flex-column text-center fs-4">
+                    <li class="list-group-item flex-fill bg-desplegable2"><a href="../scoreboard/2024.html"
+                        class="text-decoration-none text-reset">Scoreboard</a></li>
+                    <li class="list-group-item flex-fill bg-desplegable2"><a href="../jornadas/2024.html"
+                        class="text-decoration-none text-reset">Jornadas</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /2024 -->
+            </div>
+            <!-- /años -->
+          </li>
+  
+          <li class="list-group-item flex-fill bg-navbar border-negro">
+            <a href="../halloffame/index.html" class="text-decoration-none text-reset">Hall of Fame</a>
+          </li>
+          <li class="list-group-item flex-fill bg-navbar border-negro">
+            <a href="../premios/index.html" class="text-decoration-none text-reset">Premios</a>
+          </li>
+          <li class="list-group-item flex-fill bg-navbar border-negro">
+            <a href="../normas/index.html" class="text-decoration-none text-reset">Normas</a>
+          </li>
+          <li class="list-group-item flex-fill bg-navbar border-negro">
+            <a href="../inscripcion/index.html" class="text-decoration-none text-reset">Inscripción</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- fin collapse ediciones -->
+    <!-- /NAV SM -->
     <!-- breadcrumps -->
     <div class="container-fluid bg-white" style="--bs-bg-opacity: 4%;">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="..">Inicio</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Hall of Fame</li>
             </ol>
         </nav>
@@ -104,7 +173,7 @@
     <!-- CONTENIDO -->
     <div>
         <div class="container bg-transparent">
-            <h1 class="text-center" style="font-size: 5rem;"><i class="fa-solid fa-trophy"
+            <h1 class="text-center changa-font titulo-sm" style="font-size: 5rem;"><i class="fa-solid fa-trophy"
                     style="color: #adad1b; text-shadow: 0px 0px 3px #161616;"></i> Hall of Fame <i
                     class="fa-solid fa-trophy" style="color: #adad1b; text-shadow: 0px 0px 3px #161616;"></i></h1>
             <p class="text-center">Los equipos ganadores de cada año</p>
@@ -112,25 +181,25 @@
         <!-- 2023 -->
         <div class="row w-100 text-center m-0">
             <!-- Año -->
-            <div class="col-sm p-3" style="font-size: 10rem;">2023</div>
+            <div class="col-sm p-3 changa-font" style="font-size: 10rem;">2023</div>
             <!-- Equipo -->
             <div class="col-sm p-3">
-                <div class="row bg-warning">
+                <div class="row">
                     <!-- TODO: https://getbootstrap.com/docs/5.3/utilities/object-fit/#responsive -->
                     <!-- esta imagen es de 1280x720 -->
                     <img src="../img/bobsp.jpg" class="img-fluid border border-1 border-black p-0 rounded-1"
                         alt="imagen de grupo">
                 </div>
-                <div class="row bg-danger">
+                <div class="row">
                     <p>Nombre Equipo</p>
                 </div>
             </div>
             <!-- Robot -->
             <div class="col-sm p-3">
-                <div class="row bg-primary">
+                <div class="row">
                     <p>Nombre Robot</p>
                 </div>
-                <div class="row bg-success">
+                <div class="row">
                     <!-- esta imagen es de 250x250 -->
                     <img src="../img/karen.jpg" class="img-fluid border border-1 border-black p-0 rounded-1"
                         alt="imagen de grupo">
