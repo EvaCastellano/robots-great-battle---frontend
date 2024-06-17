@@ -7,7 +7,7 @@
   <title>RGB · Scoreboard 2023</title>
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- mi css -->
   <link rel="stylesheet" href="../style.css">
   <!-- google fonts -->
@@ -15,6 +15,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="../bootstrap-5.3.3-dist/fontawesome-free-6.5.2-web/css/all.css">
 </head>
@@ -25,7 +28,8 @@
     <div class="container-fluid">
       <div class="col">
         <div class="row">
-          <a class="navbar-brand pt-2 pb-2" href=".." style="width: auto; font-family: teko; font-size: 3rem;">ROBOTS GREAT BATTLE</a>
+          <a class="navbar-brand pt-2 pb-2" href=".." style="width: auto; font-family: teko; font-size: 3rem;">ROBOTS
+            GREAT BATTLE</a>
           <!-- btn hamburguesa -->
           <button class="btn lg-invisible ms-auto" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" style="width: auto;"><span
@@ -39,21 +43,17 @@
                 data-bs-target="#Ediciones" aria-expanded="false" aria-controls="Ediciones">
                 Ediciones</a>
             </li>
-            <li class="list-group-item-action text-decoration-none"><a href="./halloffame/index.html"
+            <li class="list-group-item-action text-decoration-none"><a href="../halloffame/index.html"
                 class="text-decoration-none text-reset"> Hall of
                 Fame </a></li>
 
-            <li class="list-group-item-action"><a href="../premios/index.html" class="text-decoration-none text-reset">Premios</a></li>
-            <li class="list-group-item-action"><a href="../normas/index.html"
-                class="text-decoration-none text-reset">Normas</a>
-            </li>
-            <li class="list-group-item-action"><a href="../inscripcion/index.html"
-                class="text-decoration-none text-reset">Inscripción</a></li>
+            <li class="list-group-item-action"><a href="../premios/index.html"
+                class="text-decoration-none text-reset">Premios</a></li>
           </ul>
 
         </div>
         <!-- collapse Ediciones -->
-        <div style="width: 20%; position: absolute; left: 0;" class="collapse bg-desplegable m-0" id="Ediciones">
+        <div style="width: 33.3%; position: absolute; left: 0;" class="collapse bg-desplegable m-0" id="Ediciones">
           <div class="card card-body bg-desplegable p-0">
             <ul class="list-group text-center fs-4 lista">
 
@@ -76,9 +76,9 @@
                   2024
                 </button>
                 <ul class="dropdown-menu p-0">
-                  <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../scoreboard/2023.html"
+                  <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../scoreboard/2024.html"
                       class="text-decoration-none text-reset">Scoreboard</a></li>
-                  <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../jornadas/2023.html"
+                  <li class="list-group-item-action bg-desplegable fs-4 p-2"><a href="../jornadas/2024.html"
                       class="text-decoration-none text-reset">Jornadas</a></li>
                 </ul>
               </li>
@@ -100,7 +100,7 @@
     </div>
     <div class="offcanvas-body p-0">
       <!-- contenido -->
-      <ul class="list-group w-100 d-flex flex-column text-center fs-4 border-r-0" >
+      <ul class="list-group w-100 d-flex flex-column text-center fs-4 border-r-0">
         <li class="list-group-item flex-fill ps-0 pe-0 bg-navbar border-negro">
           <a class="text-decoration-none text-reset" role="button" data-bs-toggle="collapse"
             data-bs-target="#EdicionesSM" aria-expanded="false" aria-controls="EdicionesSM">
@@ -152,12 +152,6 @@
         <li class="list-group-item flex-fill bg-navbar border-negro">
           <a href="../premios/index.html" class="text-decoration-none text-reset">Premios</a>
         </li>
-        <li class="list-group-item flex-fill bg-navbar border-negro">
-          <a href="../normas/index.html" class="text-decoration-none text-reset">Normas</a>
-        </li>
-        <li class="list-group-item flex-fill bg-navbar border-negro">
-          <a href="../inscripcion/index.html" class="text-decoration-none text-reset">Inscripción</a>
-        </li>
       </ul>
     </div>
   </div>
@@ -167,14 +161,15 @@
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Scoreboard</li>
+        <li class="breadcrumb-item active" aria-current="page">Scoreboard 2023</li>
       </ol>
     </nav>
   </div>
 
   <!-- TITULO -->
-  <div class="container-fluid text-center m-3 kanit-light">
-    <h1>EDICIÓN 2023</h1>
+  <div class="container-fluid text-center m-3">
+    <h1 class="changa-font mb-0">SCOREBOARD</h1>
+    <h2 class="changa-font">2023</h2>
   </div>
   <!-- FIN TITULO -->
   <!-- SCOREBOARD -->
@@ -184,7 +179,7 @@
         <tr>
           <th>Posición</th>
           <th style="width: 80%">Nombre Equipo</th>
-          <th>Puntos</th>
+          <th class="text-center">Puntos</th>
         </tr>
       </thead>
       <tbody> <!--  class="table-group-divider" -->
@@ -192,78 +187,191 @@
         <tr type="button" data-bs-toggle="modal" data-bs-target="#equipo1"> <!-- Button trigger modal -->
           <th>1</th>
           <td>
-              Equipo 1
+            Equipo 1
           </td>
-          <td>n</td>
+          <td class="text-center">n</td>
         </tr>
         <!-- fin primera row -->
-        <tr>
+        <tr type="button" data-bs-toggle="modal" data-bs-target="#equipo2">
           <th>2</th>
           <td>Equipo 2</td>
-          <td>n</td>
+          <td class="text-center">n</td>
         </tr>
-        <tr>
+        <tr type="button" data-bs-toggle="modal" data-bs-target="#equipo3">
           <th>3</th>
           <td>Equipo 3</td>
-          <td>n</td>
+          <td class="text-center">n</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <!-- Modal E1-->
-  <!-- modal -->
   <div class="modal fade bg-transparente" id="equipo1" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content kanit-light gradient-blue">
-        <div class="modal-header">
+      <div class="modal-content  gradient-blue">
+        <div class="modal-header border-negro">
           <h1 class="modal-title fs-5">Equipo 1</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body kanit-light">
+        <div class="modal-body ">
           <div class="row">
-            <div class="col">
-              <div class="row container">
-                <h1 class="text-center text-decoration-underline">MIEMBROS</h1>
-                <ul class="fs-4 text ms-2 lista">
-                  <li>Líder</li> <!-- TODO: resaltar de alguna manera al lider -->
+            <div class="col-lg-6">
+              <div class="row container text-center">
+                <h1 class="text-decoration-underline">MIEMBROS</h1>
+                <ul class="fs-4 text lista ">
+                  <li>Nombre <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                      data-bs-trigger="hover focus" data-bs-content="Líder">
+                      <p class="m-0" disabled>(<i class="fa-solid fa-star" style="color: #FFD43B;"></i>)</p>
+                    </span>
+                  </li>
                   <li>Nombre</li>
                   <li>Nombre</li>
                 </ul>
               </div>
               <div class="row text-center">
-                <img src="../img/bobsp.jpg" class="img-fluid border border-2 border-black p-0 ms-4 rounded-2" alt="imagen de grupo">
-                <!-- 360x188   bobsp:1280x720-->
+                <img src="https://dummyimage.com/4000x3000" class="img-fluid border border-2 border-black p-0 rounded-2"
+                  alt="imagen de grupo" style="width: fit-content;">
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg-6">
               <div class="row">
-                <div class="text-center">
-                  <img src="../img/karen.jpg" alt="foto robot" class="img-fluid border border-2 border-black p-0 rounded-2">
+                <div class="text-center mt-2">
+                  <img src="https://dummyimage.com/4000x3000" alt="foto robot"
+                    class="img-fluid border border-2 border-black p-0 rounded-2">
                 </div>
               </div>
               <div class="row text-center">
-                <p>NOMBRE ROBOT</p>
+                <p>Nombre Robot</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="modal-footer">
-        </div> -->
       </div>
     </div>
   </div>
-  <!-- FIN modal E1-->
+  <!-- /modal E1-->
+
+  <!-- Modal E2-->
+  <div class="modal fade bg-transparente" id="equipo2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content  gradient-red">
+        <div class="modal-header border-negro">
+          <h1 class="modal-title fs-5">Equipo 2</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row container text-center">
+                <h1 class="text-decoration-underline">MIEMBROS</h1>
+                <ul class="fs-4 text lista ">
+                  <li>Nombre <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                      data-bs-trigger="hover focus" data-bs-content="Líder">
+                      <p class="m-0" disabled>(<i class="fa-solid fa-star" style="color: #FFD43B;"></i>)</p>
+                    </span>
+                  </li>
+                  <li>Nombre</li>
+                  <li>Nombre</li>
+                </ul>
+              </div>
+              <div class="row text-center">
+                <img src="https://dummyimage.com/4000x3000" class="img-fluid border border-2 border-black p-0 rounded-2"
+                  alt="imagen de grupo" style="width: fit-content;">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="text-center mt-2">
+                  <img src="https://dummyimage.com/4000x3000" alt="foto robot"
+                    class="img-fluid border border-2 border-black p-0 rounded-2">
+                </div>
+              </div>
+              <div class="row text-center">
+                <p>Nombre Robot</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /modal E2-->
+
+  <!-- Modal E3-->
+  <div class="modal fade bg-transparente" id="equipo3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content  gradient-green">
+        <div class="modal-header border-negro">
+          <h1 class="modal-title fs-5">Equipo 3</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row container text-center">
+                <h1 class="text-decoration-underline">MIEMBROS</h1>
+                <ul class="fs-4 text lista ">
+                  <li>Nombre <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                      data-bs-trigger="hover focus" data-bs-content="Líder">
+                      <p class="m-0" disabled>(<i class="fa-solid fa-star" style="color: #FFD43B;"></i>)</p>
+                    </span>
+                  </li>
+                  <li>Nombre</li>
+                  <li>Nombre</li>
+                </ul>
+              </div>
+              <div class="row text-center">
+                <img src="https://dummyimage.com/4000x3000" class="img-fluid border border-2 border-black p-0 rounded-2"
+                  alt="imagen de grupo" style="width: fit-content;">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="text-center mt-2">
+                  <img src="https://dummyimage.com/4000x3000" alt="foto robot"
+                    class="img-fluid border border-2 border-black p-0 rounded-2">
+                </div>
+              </div>
+              <div class="row text-center">
+                <p>Nombre Robot</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /modal E3-->
 
 
 
-  
 
+  <!-- desplegable ediciones -->
+  <script>
+    document.addEventListener('click', function (event) {
+      var collapseElement = document.getElementById('Ediciones');
+      var collapseButton = document.querySelector('[data-bs-toggle="collapse"]');
 
-
+      if (!collapseElement.contains(event.target) && !collapseButton.contains(event.target)) {
+        if (collapseElement.classList.contains('show')) {
+          var collapse = new bootstrap.Collapse(collapseElement, {
+            toggle: true
+          });
+          collapse.hide();
+        }
+      }
+    });
+  </script>
+  <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!-- popover equipo -->
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
 </body>
 
 </html>

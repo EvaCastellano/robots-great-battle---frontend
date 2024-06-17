@@ -29,7 +29,12 @@
     display: none;
 }
 .hover :hover { 
-  background-color: rgba(255, 255, 255, 0.596);  /* rgba(0, 0, 255, 0.212); */
+  background-color: rgba(255, 255, 255, 0.596); 
+}
+
+.hover-jornadas :hover { 
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,0) 0%, rgba(102, 219, 255, 0.473) 50%, rgba(253,187,45,0) 100%); 
 }
 
 .content {
@@ -46,7 +51,7 @@
 
 .gradient-blue {
   background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 4%, rgba(9,9,121,1) 47%, rgba(7,61,159,1) 100%); 
+  background: radial-gradient(circle, rgb(3, 0, 68) 4%, rgba(9,9,121,1) 47%, rgba(7,61,159,1) 100%); 
 }
 .gradient-red{
   background: rgb(36,4,0);
@@ -223,9 +228,6 @@ background-color: #699190;
   font-weight: 900;
   font-style: italic;
 }
-
- /* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 200 to 800 */
 
 .changa-font {
   font-family: "Changa", sans-serif;
